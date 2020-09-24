@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <title>React Basic project</title>
+    <script src="https://unpkg.com/react@16.7.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+      .heading {
+        color:green;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>    
+    <!-- Lesson goal is to show the application of subbing in varibles -->
+    <!-- adding JSX attributes, className attribute introduction -->
+    <script type="text/babel"> 
+      let city ="Madrid";
+
+      ReactDOM.render(
+        <h1 className="heading">Oh noes its {city}</h1>,
+        document.getElementById('root')
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <title>React Basic project</title>
+    <script src="https://unpkg.com/react@16.7.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+      .heading {
+        color:green;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>    
+    <!-- Lesson: surrounding component introductions -->
+    <!-- Special Note: Components when being called upon must be in capital letters -->
+    <script type="text/babel"> 
+      
+      const Hello = () => 
+        <div className="heading">
+          <h1>Welcome to react </h1>
+        </div>
+
+      ReactDOM.render(
+        <Hello />,
+        document.getElementById('root')
+      );
+    </script>
+  </body>
+</html>

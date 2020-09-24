@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <title>React Basic project</title>
+    <script src="https://unpkg.com/react@16.7.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <!-- This lesson talks about JSX or Javascript XML. This allows for tags within javascript -->
+    <!-- We also added in babel, this allows for us to place DOMelements in the rend call of react-->
+    <div id="root"></div>
+    <!-- Special Note: its no longer text/javascript but text/bable-->
+    <script type="text/babel"> 
+      ReactDOM.render(
+        <h1>HelloWorld</h1>,
+        document.getElementById('root')
+      );
+    </script>
+  </body>
+</html>
